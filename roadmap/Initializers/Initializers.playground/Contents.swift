@@ -56,3 +56,25 @@ struct D{
 let personD = D("female", 21)
 
 print("\ngender: \(personD.gender)\nage: \(personD.age)")
+
+//multiple initializers
+struct E{
+    var name = "Chris"
+    var age: Int
+
+    init(_ name: String){
+        self.name = name
+        self.age = 15
+    }
+    
+    init(_ age: Int){
+        self.age = age
+    }
+}
+
+let personE1 = E("James")
+let personE2 = E(12)
+
+print("\nname: \(personE1.name)\nage: \(personE1.age)")
+print("\nname: \(personE2.name)\nage: \(personE2.age)")
+
