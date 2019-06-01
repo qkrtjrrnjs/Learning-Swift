@@ -1,7 +1,7 @@
 import UIKit
 
 
-//generics examples
+//generic examples
 
 func addInt(_ A: Int, _ B: Int) -> Int{
     return A + B
