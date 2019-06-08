@@ -1,6 +1,3 @@
-# Swift
-
-- The Swift Programming Language
-
+# Swift programming language
 
 
