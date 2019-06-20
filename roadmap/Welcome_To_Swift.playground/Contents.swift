@@ -65,6 +65,15 @@ func TheBasics(){
         print("nil")
     }
     
+// implicitly unwrapped optionals
+    
+    let assumed: String! = "Hello World!"
+    let implicit: String = assumed
+    print(implicit)
+    
+// Error Handling
+    
+    
     
 }
 
