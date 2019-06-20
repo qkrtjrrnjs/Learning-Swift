@@ -72,8 +72,29 @@ func TheBasics(){
     print(implicit)
     
 // Error Handling
+    enum errors: Error{
+        case ERR1
+        case ERR2
+        case ERR3
+    }
     
+    func throwError() throws{
+        if year != nil{
+            throw errors.ERR2
+        }
+    }
     
+    do{
+        try throwError()
+    }catch errors.ERR1{
+        print("err1")
+    }catch errors.ERR2{
+        print("err2")
+    }catch errors.ERR3{
+        print("err3")
+    }catch{
+        print("unknown error")
+    }
     
 }
 
