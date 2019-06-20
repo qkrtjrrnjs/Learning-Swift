@@ -56,6 +56,15 @@ func TheBasics(){
     
 // Optional Binding
     
+    //use optional binding to find out whether an optional contains a value, and if so, to make that value available as a temporary constant or variable.
+    //as opposed to forced unwrapping
+    
+    if let yearTemp = year{
+        print(yearTemp)
+    }else{
+        print("nil")
+    }
+    
     
 }
 
