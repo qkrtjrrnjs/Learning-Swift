@@ -95,9 +95,27 @@ func TheBasics(){
     }catch{
         print("unknown error")
     }
+}
+
+func BasicOperators(){
+    
+//Ternary Conditional Operator
+    let isTall = true
+    let height = isTall ? "6ft" : "5ft"
+    print(height)
+    
+//Nil Coalescing Operator
+    var nilVar: String?
+    var nilCoalesce = nilVar ?? "Something"
+    print(nilCoalesce)
+    
+//Closed range operator
+    
+//Half closed range oeprator
+    
     
 }
 
 TheBasics()
-
+BasicOperators()
 
