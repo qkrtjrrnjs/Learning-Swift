@@ -110,9 +110,22 @@ func BasicOperators(){
     print(nilCoalesce)
     
 //Closed range operator
-    
-//Half closed range oeprator
-    
+    for i in 1...5{
+        print(i)
+    }
+
+//Half closed range operator
+    for i in 1..<5{
+        print(i)
+    }
+
+//One sided range operator
+    let names = ["James", "Chris", "Sam"]
+    for name in names[...1]{
+        print(name)
+    }
+ 
+
     
 }
 
