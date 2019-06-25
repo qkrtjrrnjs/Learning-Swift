@@ -124,11 +124,25 @@ func BasicOperators(){
     for name in names[...1]{
         print(name)
     }
- 
-
     
+}
+
+func StringAndCharacters(){
+    
+//Multiline String literals
+    let longString = """
+    Hello World!
+    Hello World!
+    안녕!
+    안녕!
+    """
+    print(longString)
+    
+//special characters unicode
+    let sparklingHeart = "\u{1F496}"
+    print(sparklingHeart)
 }
 
 TheBasics()
 BasicOperators()
-
+StringAndCharacters()
