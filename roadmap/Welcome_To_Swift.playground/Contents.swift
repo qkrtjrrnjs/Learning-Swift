@@ -141,6 +141,16 @@ func StringAndCharacters(){
 //special characters unicode
     let sparklingHeart = "\u{1F496}"
     print(sparklingHeart)
+    
+//Initializing empty string
+    let emptyString1 = ""
+    let emptyString2 = String()
+    
+    if emptyString1.isEmpty && emptyString2.isEmpty{
+        print("is empty")
+    }
+    
+    
 }
 
 TheBasics()
