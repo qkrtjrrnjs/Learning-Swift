@@ -150,7 +150,27 @@ func StringAndCharacters(){
         print("is empty")
     }
     
+//Working with characters
+    for character in "Hello World!"{
+        print(character)
+    }
     
+    let character: [Character] = ["H", "E", "L", "L", "O"]
+    print(String(character))
+    
+//concatenating Strings and characters
+    let string1 = "Computer"
+    let string2 = "Science"
+    let concat1 = string1 + string2
+    print(concat1)
+    
+    var concat2 = "Computer"
+    concat2 += string2
+    
+    let exclamation: Character = "!"
+    concat2.append(exclamation)
+    
+    print(concat2)
 }
 
 TheBasics()
