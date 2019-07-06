@@ -158,7 +158,7 @@ func StringAndCharacters(){
     let character: [Character] = ["H", "E", "L", "L", "O"]
     print(String(character))
     
-//concatenating Strings and characters
+//Concatenating Strings and characters
     let string1 = "Computer"
     let string2 = "Science"
     let concat1 = string1 + string2
@@ -171,6 +171,26 @@ func StringAndCharacters(){
     concat2.append(exclamation)
     
     print(concat2)
+    
+//Counting characters
+    print(string1.count)
+    
+//Accessing and modifying String
+    var greeting = "Hello World!"
+    print(greeting[greeting.startIndex])
+    
+    print(greeting[greeting.index(before: greeting.endIndex)])
+    
+    print(greeting[greeting.index(after: greeting.startIndex)])
+    
+    let index = greeting.index(greeting.startIndex, offsetBy: 4)
+    print(greeting[index])
+    
+    greeting.insert("!", at: greeting.endIndex)
+    print(greeting)
+    
+    greeting.remove(at: greeting.index(before: greeting.endIndex))
+    print(greeting)
 }
 
 TheBasics()
