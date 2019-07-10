@@ -191,6 +191,13 @@ func StringAndCharacters(){
     
     greeting.remove(at: greeting.index(before: greeting.endIndex))
     print(greeting)
+    
+//Substring
+    let helloWorld = "Hello World"
+    let i = helloWorld.firstIndex(of: " ") ?? helloWorld.endIndex
+    let newString = helloWorld[..<i]
+    
+    print(newString)
 }
 
 TheBasics()
