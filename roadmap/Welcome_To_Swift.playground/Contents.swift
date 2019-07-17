@@ -211,9 +211,44 @@ func collectionTypes(){
     var _ = [Int: String]()
 }
 
+func controlFlow(){
+//for loop
+    for i in 1...5{
+        print(i)
+    }
+    
+//while loop
+    var x = 0
+    while x < 5{
+        x+=1
+    }
+    
+//repeat-while (basically a do while loop)
+    repeat{
+        x+=1
+    } while x < 10
+    
+//switch statement
+    let y = 5
+    switch y{
+    case 1:
+        print(1)
+    case 2:
+        print(2)
+    case 3:
+        print(3)
+    default:
+        print("something else")
+    }
+    
+//break, continue, fallthrough available
+    
+}
+
 
 
 TheBasics()
 BasicOperators()
 StringAndCharacters()
 collectionTypes()
+controlFlow()
