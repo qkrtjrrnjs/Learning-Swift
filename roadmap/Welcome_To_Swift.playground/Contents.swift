@@ -200,6 +200,20 @@ func StringAndCharacters(){
     print(newString)
 }
 
+func collectionTypes(){
+//Empty Array
+    var _ = [Int]()
+
+//array with default values
+    var _ = Array(repeating: 10, count: 5)
+
+//creating dictionaries (Dictionary<Key, Value>)
+    var _ = [Int: String]()
+}
+
+
+
 TheBasics()
 BasicOperators()
 StringAndCharacters()
+collectionTypes()
