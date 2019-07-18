@@ -242,9 +242,10 @@ func controlFlow(){
     }
     
 //break, continue, fallthrough available
-    
 }
 
+//ARC (Automatic reference counting)
+//Swift uses Automatic Reference Counting (ARC) to track and manage your app’s memory usage.
 
 
 TheBasics()
