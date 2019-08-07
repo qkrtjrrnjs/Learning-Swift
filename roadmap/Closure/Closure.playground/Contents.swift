@@ -43,6 +43,16 @@ func multiplyFunc () -> (Int, Int) -> Int{
 //[9]
 var returnedMultiply = multiplyFunc()
 
+//[10]
+func returnHundred() -> String{
+    return "100"
+}
+
+func insert(_ closure: () -> String){
+    print("[10] \(closure())")
+}
+
+
 print("[1] \(multiplyTwoNumbers(a: 10, b: 10))")
 print("[2] \(closure(10, 10))")
 print("[3] \(shortClosure(10, 10))")
@@ -52,3 +62,4 @@ print("[6] \(noParamClosure())")
 print("[7] \(shortNoParamClosure())")
 print("[8] \(multiplyFunc()(10, 10))")
 print("[9] \(returnedMultiply(10, 10))")
+insert(returnHundred)
